@@ -1,0 +1,33 @@
+.container{
+    margin: 50px;
+}
+svg{
+    position: relative;
+    z-index: 1;
+}
+.rect1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    fill: white;
+    stroke: green;
+    stroke-width: 30;
+    z-index: 10;
+   
+}
+.circle{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    fill: white;
+    stroke: green;
+    stroke-width: 30;
+    z-index: 100;
+}
+.rect2{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    fill: black;
+    z-index: 1000;
+}

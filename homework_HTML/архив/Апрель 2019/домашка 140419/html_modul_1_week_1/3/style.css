@@ -1,0 +1,25 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    text-align: center;
+}
+pre {
+    background-color: lightgray;
+    padding: 20px;
+}
+span {
+    background-color: lightgray;
+    color: darkred;
+}
+.text_bl {
+    color: black;
+}
+.text_b {
+    color: darkcyan;
+}
+p {
+    text-align: justify;
+}

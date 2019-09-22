@@ -1,0 +1,42 @@
+@media screen and (max-width: 599px) {
+    .bottom-container {
+        display: inline-block;
+        width: 100%;
+    }
+    .head-text {
+        width: 100%;
+        float: left;
+        font-size: 1.1em;
+        font-weight: 100;
+        color: rgba(255, 255, 255, 0.6);
+        margin: 0 0 1.3em 0;
+    }
+    .main-text {
+        width: 100%;
+        float: left;
+        font-size: 2em;
+        font-weight: 700;
+        line-height: 1.3em;
+        margin: 0 0 0.8em 0;
+    }
+    .bottom-block-pos {
+        margin: 15px 0 0 0;
+        text-align: left;
+        width: 200px;
+        float: left;
+    }
+    img {
+        float: left;
+        margin: 20px 50px 0 0;
+    }
+    .text-bottom-block {
+        float: left;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.9em;
+        width: 100%;
+        line-height: 1.5em;
+    }
+    .text-bottom-bottom {
+        font-size: 0.9em;
+    }
+}

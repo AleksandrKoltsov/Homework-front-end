@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="anchor">
+        <a href="../1/index.html">Часть 1&nbsp;&nbsp;<i class="fas fa-grip-lines-vertical"></i>&nbsp;</a>
+        <a href="../2/index.html">Часть 2&nbsp;&nbsp;<i class="fas fa-grip-lines-vertical"></i>&nbsp;</a>
+        <a href="../3/index.html">Часть 3</a>
+        <hr>
+    </div>
+<!-- ============================================ -->
+<form action="#">
+    <fieldset  class="inputs">
+        <legend>Inputs</legend>
+        <input type="text" class="some_text" placeholder="Enter some text" size="15">
+        <input type="text" class="valid_text" placeholder="valid text" size="15" required pattern="+[0-9]+[a-z]+">
+        <input type="text" class="invalid_text" placeholder="invalid text" size="15" required pattern="\S+[0-9]+">
+    </fieldset>
+    <fieldset class="checkbox">
+        <legend>Check boxes</legend>
+        <input type="checkbox" id="check1" class="hide">
+        <input type="checkbox" id="check2" class="hide" checked>
+        <div class="border_check1">
+            <label for="check1" class="check1"></label>
+        </div> Subscribe
+        <div class="border_check2">
+            <label for="check2" class="check2"></label>
+        </div> Subscribe
+    </fieldset>
+    <fieldset>
+        <legend>Radio buttons</legend>
+        <input type="radio" id="rad1" name="gender" class="hide" checked>
+        <input type="radio" id="rad2" name="gender" class="hide">
+        <div class="gender_menu">
+            <span class="gender">Gender:</span>
+            <label for="rad1" class="forBut1"><p class="but_text">Male</p></label>
+            <label for="rad2" class="forBut2"><p class="but_text">Female</p></label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Buttons</legend>
+        <input type="button" id="but1" class="hide">
+        <input type="button" id="but2" class="hide">
+        <input type="button" id="but3" class="hide">
+        <input type="button" id="but4" class="hide">
+        <input type="button" id="but5" class="hide">
+        <div class="cont_but">
+            <label for="but1" class="but1">Active</label>
+            <label for="but2" class="but2">Danger</label>
+            <label for="but3" class="but3">Disabled</label>
+            <label for="but4" class="but4"></label>
+            <label for="but5" class="but5"></label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Text area</legend>
+        <textarea name="textarea" cols="auto" rows="auto">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit laboriosam non, ipsam pariatur quaerat consequatur minima sit perspiciatis obcaecati nisi provident facilis necessitatibus fuga excepturi nulla vel illo exercitationem deleniti similique. Fuga commodi a totam cum blanditiis quibusdam suscipit doloremque earum? Optio, voluptatibus rerum voluptatem cumque quibusdam quidem praesentium repudiandae ad itaque, veritatis harum. Impedit itaque eveniet non est iste dolores officia quisquam vero asperiores, atque perspiciatis nesciunt incidunt qui dignissimos delectus nobis, rem explicabo tempora inventore iusto, libero beatae quo. Fugit voluptatem illo quo voluptates, vitae id tempora facilis aspernatur beatae fugiat mollitia sunt culpa laborum praesentium totam nulla.
+        </textarea>
+    </fieldset>
+</form>
+</body>
+</html>

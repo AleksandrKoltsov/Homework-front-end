@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+div { /*общий размер блока*/
+    width: 400px;
+}
+ul {
+    list-style-position: inside; 
+    font-size: 0.8em; 
+    padding: 0px;
+    margin: 0px;
+    
+}
+li:nth-child(odd) {background-color: skyblue} /*создал зебру*/
+li:nth-child(even){background-color: powderblue}
+li {
+    line-height: 30px;
+    padding-left: 40px;
+    padding-top: 5px;   
+    
+}
+.chkon {
+    list-style-image: url("checked_16.png");
+    background-color: lightgray !important; /*приоритет цвета*/
+}
+.chkoff {
+    list-style-image: url("unchecked_16.png");
+}
+
+.space {
+    padding-left: 15px;
+}
+.cross { /*красный крестик*/
+    font-size: 1.1em;
+    font-weight: 700;
+    color: rgb(150, 14, 14);
+    padding-left: 15px;
+}
+
+h3 {
+    padding-left: 10px;
+}

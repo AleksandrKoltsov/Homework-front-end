@@ -1,0 +1,69 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+footer { /*размеры и цвет самого футера*/
+    padding-top: 50px;
+    background-color: rgb(63, 93, 133);
+    height: 250px;
+}
+div { /*строим блоки в линию*/
+    display: inline-block;
+}
+ul {/*убераем стиль списка*/
+    list-style: none;
+}
+li {/*высота строки в списке*/
+    line-height: 1.5em;
+}
+
+.block_left { /*левый список*/
+    width: 30%;
+    margin-left: 120px;
+}
+.block_right { /*блок с изображениями*/
+    width: 30%;
+}
+.block_center { /*правый список*/
+    width: 30%;
+}
+hr {
+    width: 90%; /*укарачиваем линию*/
+}
+.centerp { /*класс для центровки*/
+    text-align: center;
+}
+span:hover { /*подчеркивание при наведении курсора*/
+    text-decoration: underline;
+}
+.fb { /*фоновая картинка facebook*/
+    background: url("../img/fb_gray.png") round;
+    width: 40px;
+    height: 40px;
+    
+}
+.fb:hover {/* смена картинки при наведении курсора*/
+    background-image: url("../img/fb.png");
+}
+.insta { /*фоновая картинка instagram*/
+    background: url("../img/insta_gray.png") round;
+    width: 40px;
+    height: 40px;
+}
+.insta:hover {/* смена картинки при наведении курсора*/
+    background-image: url("../img/insta.png");
+}
+.yt { /*фоновая картинка youtube*/
+    background: url("../img/youtube_gray.png") round;
+    width: 40px;
+    height: 40px;
+}
+.yt:hover {/* смена картинки при наведении курсора*/
+    background-image: url("../img/youtube.png");
+}
+.leftm{ /*левый отступ для картинок*/
+    margin-left: 30px;
+}
+.botm { /*левый отступ для картинок*/
+    margin-bottom: 30px;
+}

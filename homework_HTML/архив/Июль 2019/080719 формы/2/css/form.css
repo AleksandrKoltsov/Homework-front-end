@@ -1,0 +1,260 @@
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+form{
+    padding: 2vh 4vw 0 4vw;
+    
+}
+legend{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 2vh;
+}
+fieldset{
+    margin-top: 4vh;
+}
+/*========================= INPUTS ======================*/
+fieldset.inputs > input{
+    font-size: 1.3em;
+    padding: 0.5em;
+    text-indent: 0.5em;
+    border-radius: 7px;   
+}
+.some_text{
+    border: 2px solid lightgray;
+    background-color: #fff;
+}
+.valid_text:valid{
+    border: 2px solid rgb(0, 202, 0);
+    background: url('../img/valid.png') no-repeat;
+    background-size: 32px 32px;
+    background-position: 95% 50%;
+    background-color: #fff;
+}
+.invalid_text:invalid{
+    border: 2px solid rgb(255, 88, 88);
+    background: url('../img/invalid.png') no-repeat;
+    background-size: 24.5px 32px;
+    background-position: 95% 50%;
+    background-color: #fff;
+}
+.some_text::placeholder{
+    color:lightgray;
+}
+.valid_text::placeholder{
+    color:rgba(0, 202, 0, 0.507);
+}
+.invalid_text::placeholder{
+    color:rgba(255, 88, 88, 0.507);
+  }
+/* ===================== CHECK BOXES ==================*/
+.border_check1{
+    display: inline-block;
+    width: 2.5em;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 202, 0);
+    background-color: #fff;
+}
+.check1{
+    display: inline-block;
+    background-color: rgb(0, 202, 0);
+    width: 1em;
+    height: 0.8em;
+    margin: 0.1em ;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+#check1:checked~.border_check1{
+    border: 2px solid rgb(250, 40, 40);
+}
+#check1:checked~.border_check1>.check1{
+    display: inline-block;
+    width: 1em;
+    height: 0.8em;
+    margin: 0.1em 0.1em 0.1em 1.1em;
+    border-radius: 5px;
+    background-color:  rgb(250, 40, 40);
+    transition: all 0.2s;
+}
+.border_check2{
+    display: inline-block;
+    width: 2.5em;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 202, 0);
+    background-color: #fff;
+}
+.check2{
+    display: inline-block;
+    background-color: rgb(0, 202, 0);
+    width: 1em;
+    height: 0.8em;
+    margin: 0.1em ;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+#check2:checked~.border_check2{
+    border: 2px solid rgb(250, 40, 40);
+}
+#check2:checked~.border_check2>.check2{
+    display: inline-block;
+    width: 1em;
+    height: 0.8em;
+    margin: 0.1em 0.1em 0.1em 1.1em;
+    border-radius: 5px;
+    background-color:  rgb(250, 40, 40);
+    transition: all 0.2s;
+}
+.hide{
+    display: none;
+}
+/*==================== RADIO BUTTON ========================*/
+.gender_menu{
+    display: flex;
+}
+.gender{
+    margin-right: 1em;
+}
+.gender_menu > label{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: 0 3em 0 0; 
+    border: 1px solid green;
+    background-color: #fff; 
+  }
+  .but_text{
+      margin-left: 1.3em;
+  }
+  #rad1:checked~.gender_menu>.forBut1::after{
+    content: '';
+    display: block;
+    margin: -0.875em 0 0 0.12em;
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    background-color: green;
+}
+  #rad2:checked~.gender_menu>.forBut2::after{
+    content: '';
+    display: block;
+    margin: -0.875em 0 0 0.12em;
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    background-color: green;
+}
+
+/*====================== BUTTONS ===========================*/
+.cont_but{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cont_but>label{
+    margin: 0 1em 0 0;
+    width: 100px;
+    height: 45px;
+    color: white;
+    font-weight: bold;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 10px;
+}
+.but1{
+    background-color: rgb(91, 206, 91);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.but1:hover{
+    background-color: green;
+    box-shadow: 5px 3px 4px rgb(141, 141, 141);
+}
+.but1:active {
+    border: 2px solid green;
+    box-shadow: 2px 1px 2px rgb(141, 141, 141);
+    transform: translateY(4px);
+}
+.but2{
+    background-color: rgb(206, 91, 91);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.but2:hover{
+    background-color: red;
+    box-shadow: 5px 3px 4px rgb(141, 141, 141);
+}
+.but2:active {
+    border: 2px solid red;
+    box-shadow: 2px 1px 2px rgb(141, 141, 141);
+    transform: translateY(4px);
+}
+.but3{
+    background-color: rgba(141, 141, 141, 0.5);
+    border: 1px solid  rgba(102, 102, 102, 0.5);
+    cursor: not-allowed;
+}
+div.cont_but>label.but4{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgb(0, 179, 0);
+    transition: all 0.2s;
+    cursor: pointer;
+    border: 1px solid green;
+}
+.but4::after{
+    content: '';
+    display: block;
+    width: 5px;
+    height: 25px;
+    margin: -14px 0 0 22px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.but4::before{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 22px 0 0 13px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.but4:hover{
+    box-shadow: 5px 3px 4px rgb(141, 141, 141);
+}
+.but4:active {
+    box-shadow: 2px 1px 2px rgb(141, 141, 141);
+    transform: translateY(4px);
+}
+
+div.cont_but>label.but5{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgb(179, 12, 0);
+    transition: all 0.2s;
+    cursor: pointer;
+    border: 1px solid rgb(128, 0, 0);
+}
+.but5::before{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 22px 0 0 13px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.but5:hover{
+    box-shadow: 5px 3px 4px rgb(141, 141, 141);
+}
+.but5:active {
+    box-shadow: 2px 1px 2px rgb(141, 141, 141);
+    transform: translateY(4px);
+}

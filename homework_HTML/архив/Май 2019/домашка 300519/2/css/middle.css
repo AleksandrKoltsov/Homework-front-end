@@ -1,0 +1,41 @@
+@media screen and (max-width: 800px) {
+    .main-content {
+        padding: 0 30px 0 0;
+        width: 800px;
+        margin: 7vh 0 0 5vw;
+    }
+    .first-text-block {
+        width: 90vw;
+        margin-bottom: 2em;
+    }
+    .second-text-block{
+        width: 90vw;
+    }
+    .cat1 {
+        background-size: 40vw auto;
+        float: left;
+        width: 40vw;
+        margin: 0 2vw 0 0;
+    }
+    .cat2 {
+        background-size: 40vw auto;
+        float: left;
+        width: 40vw;
+        margin: 0 0 0 2vw;
+        
+    }
+    .container-cat {
+        width: 90%;
+        float: left;
+        margin-bottom: 2em;
+    }
+    .text-img {
+        text-align: right;
+        margin-top: 66%;
+        color: white;
+        width: 40vw;
+        background-color: rgb(55, 81, 107);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}

@@ -1,0 +1,8 @@
+.main-content {
+    width: 85%;
+    z-index: 0;
+    display: block;
+    position: relative;
+    left: 150px;
+    text-align: justify;
+}

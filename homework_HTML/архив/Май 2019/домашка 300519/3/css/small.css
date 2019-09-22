@@ -1,0 +1,182 @@
+@media screen and (max-width: 550px){
+    /*===================== HEADER ========================*/
+    
+    .head-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid rgb(100, 100, 100);
+    }
+    .my-mail {
+        font-size: 1.2em;
+        margin: 0 0 0 20px;    
+    }
+    .mail {
+        margin: 0 20px 0 0;
+    }
+    .left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .logo {
+        margin: 25px 0px 25px 25px;
+      
+        background: url('../img/mail.png');
+        background-size: 50px auto;
+        width: 50px;
+        height: 50px;
+    }
+    .right {    
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .account {
+        width: 50px;
+        height: 50px;
+        background: url('../img/account.png');
+        background-size: 50px auto;
+        margin: 25px 25px 25px 0;
+    }
+    /*===================== MENU ========================*/
+    .body-content{
+        display: flex;
+        flex-direction: row;
+    }
+    aside.menu {
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+        font-size: 1em;
+        margin: 30px 50px 0 50px;
+    }
+    .div-list-pos{
+        display: flex;
+        white-space: nowrap; 
+        overflow: hidden; 
+        padding: 3vh 0 3vh 10vw;
+        margin: 1vh 0 1vh 0vw;
+    }
+    .div-list-pos:hover {
+        background-color: rgb(238, 189, 189);
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    .incom {
+        background: url('../img/incom.png') no-repeat;
+        background-position: 50%, left; 
+    }
+    .out {
+        background: url('../img/outcom.png') no-repeat;
+        background-position: 50%, left; 
+    }
+    .draft {
+        background: url('../img/draft.png') no-repeat;
+        background-position: 50%, left; 
+    }
+    .spam {
+        background: url('../img/spam.png') no-repeat;
+        background-position: 50%, left; 
+    }
+    /*=================== MAIN ==========================*/
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 4.5vh 0 0 3vw;
+    }
+    .main-column{
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.507);
+        flex-flow:  wrap;
+    }
+    .main-column:hover{
+        background-color: rgb(204, 204, 204);
+        transition: all 0.2s;
+    }
+    .first-mail-conteiner {
+        order: 1;
+        display: flex;
+        align-items: center;
+        width: 30vw;   
+    }
+    .second-mail-conteiner {
+        order: 3;
+        display: flex;
+        align-items: center;
+        flex-flow: wrap;
+        width: 52vw;
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        padding: 0 0 0 0;
+        margin: 0 0 0 7vw;
+    
+    }
+    .third-mail-conteiner {
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0 0 0 1vw;
+        width: 26vw;
+    }
+    
+    .empty-star {
+        background: url('../img/star1.svg') no-repeat;
+    }
+    .full-star {
+        background: url('../img/star2.svg') no-repeat;
+    }
+    .conteiner-pic-main {
+        background-size: 20px auto;
+        width: 20px;
+        height: 20px;
+        margin: 1.6vh 2vw 0 1.5vw;
+        padding: 15px 0 15px 0;
+    }
+    .text1 {
+    
+    }
+    .text2 {
+        width: 100%;
+        padding: 0 0 0.5em 0;
+    }
+    .text3{
+        color: gray;
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        padding: 0 0 0.5em 0;
+       
+    }
+    .dash{
+        display: none;
+        color: gray;
+        margin: 0 0.2vw 0 0.2vw;
+    }
+    .clip{
+    
+        margin: 1.6vh 1vw 0 1vw;
+        padding: 15px 0 15px 0;
+        background: url('../img/attach_26.png') no-repeat;
+        background-size: 20px auto;
+        width: 20px;
+        height: 20px;    
+    }
+    .date{
+        margin: 0 1vw 0 6vw;
+        width: auto;
+    }
+    main > div.main-column:nth-child(3) div.clip{
+        visibility: hidden;
+    }
+    main > div.main-column:nth-child(6)  div.clip {
+        visibility: hidden;
+    }
+    main > div.main-column:nth-child(7)  div.clip {
+        visibility: hidden;
+    }
+    }

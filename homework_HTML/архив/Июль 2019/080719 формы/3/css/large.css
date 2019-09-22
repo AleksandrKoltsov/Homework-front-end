@@ -1,0 +1,22 @@
+@media screen and (min-width: 901px){
+    .grid-conteiner{
+        grid-template-columns: min-content 1fr 1fr min-content 1fr 1fr;
+        grid-template-rows: repeat(9, 55px);
+        grid-column-gap: 1em;
+        width: 80vw;
+        height: 550px;
+        grid-template-areas: 
+        "reg-form reg-form reg-form . pers-det    pers-det"
+        "pic-user username username . first-name last-name"
+        "pic-email  email     email . gender       date   "
+        "pic-pwd   pwd  confirm-pwd .    .           ."
+        "   .        .       .      .    .           ."
+        "check-news  news   news    .    .           ."
+        "check-cond  cond   cond    .    .           ."
+        "lin         lin     lin    lin  lin       lin"
+        "   .        .       .      .    .      submit"
+        "   .        .       .      .    .           .";
+    }
+    
+    
+}

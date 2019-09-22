@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="anchor">
+        <a href="../1/index.html">Часть 1&nbsp;&nbsp;<i class="fas fa-grip-lines-vertical"></i>&nbsp;</a>
+        <a href="../2/index.html">Часть 2&nbsp;&nbsp;<i class="fas fa-grip-lines-vertical"></i>&nbsp;</a>
+        <a href="../3/index.html">Часть 3</a>
+        <hr>
+    </div>
+<!-- ============================================ -->
+
+<form class="grid_container">
+    <header class="header">
+        <legend class="legend_text">
+             CREDIT CARD DETAILS
+        </legend>
+    </header>
+    <div class="card_num">
+        <lable class="style_lable">Card Number</lable>
+        <input type="text" class="style_input" maxlength="16" placeholder="1234 5678 9012 3456" required pattern="\S+[0-9] {16}+" >
+    </div>
+    <div class="name">
+        <lable class="style_lable">Name On Card</lable>
+        <input type="text" class="style_input" maxlength="16" placeholder="Name Surname" pattern="[a-z]" required>
+    </div>
+    <div class="data_day">
+        <lable class="style_lable">Expiry Date</lable>
+        <input type="text" class="style_input" maxlength="2" placeholder="00" pattern="[0-9]" required>
+    </div>
+    <div class="data_year">
+        <input type="text" class="style_input" maxlength="2" placeholder="00" pattern="[0-9]" required>
+    </div>
+    <div class="data_cvv">
+        <lable class="style_lable">CVV / CVN</lable>
+        <input type="password" class="style_input" maxlength="3" placeholder="***" pattern="[0-9]" required>
+    </div>
+    <div class="pic"></div>
+</form>
+</body>
+</html>

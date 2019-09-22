@@ -1,0 +1,141 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14pt;
+}
+table {
+    margin: 0 0 0 50px;
+    border-spacing: 0px;
+    empty-cells: hide;
+}
+td {
+    text-align: center;
+    vertical-align: middle;
+    width: 60px;
+    height: 65.34px;
+    line-height: 20px;
+    border: 0.5px solid white;
+}
+
+.smallTop {
+    vertical-align: top;
+    font-size: 8pt;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: 700;
+    display: block;
+    
+}
+.name {
+    display: block;
+    font-size: 20pt;
+    font-weight: 700;
+    vertical-align: bottom;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.smallBottom {
+    font-size: 6pt;
+    vertical-align: middle;
+    font-weight: 600;
+}
+.anotherNometals {
+    background-color: rgb(255, 139, 74);
+}
+.alkaliMetals {
+    background-color: rgb(72, 144, 204);
+}
+.alkaliLandMetals {
+    background-color: rgb(233, 195, 164);
+}
+.none {
+    background-color: rgb(217, 221, 224);
+}
+.transitionMetals {
+    background-color: rgb(245, 214, 1);
+}
+.metalloids {
+    background-color: rgb(1, 190, 163);
+}
+.halogens {
+    background-color: rgb(207, 157, 183);
+}
+.nobleGasses {
+    background-color: rgb(2, 170, 213);
+}
+.postTransitionMetals {
+    background-color: rgb(184, 191, 120);
+}
+.lanthanides { 
+    background-color: rgb(223, 81, 174);
+}
+.actinides {
+    background-color: rgb(253, 125, 145);
+}
+td:hover {
+    transition: all 0.3s;
+    transform: scale(1.3);
+}
+div {
+    position: absolute;
+    
+}
+ul {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8em;
+    list-style-type: none;
+}
+div.left {
+    margin: 30px 0 0 200px;
+}
+div.right {
+    margin: 30px 0 0 400px;
+}
+div.bottom {
+    margin: -180px 20px 0 50px;
+    width: 230px;    
+}
+p.tab strong {
+    margin-left: 3em;
+}
+.tab {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 14px;
+}
+i {
+    margin-right: 1em;
+}
+i.metalloids { 
+    color: rgb(1, 190, 163);
+}
+i.none {
+    color: rgb(255, 255, 255);
+}
+i.anotherNometals {
+    color: rgb(255, 139, 74);
+}
+i.halogens {
+    color:  rgb(207, 157, 183);
+}
+i.nobleGasses {
+    color:  rgb(2, 170, 213);
+}
+i.alkaliMetals {
+    color: rgb(72, 144, 204);
+}
+i.alkaliLandMetals {
+    color:  rgb(233, 195, 164);
+}
+i.lanthanides {
+    color: rgb(223, 81, 174);
+}
+i.actinides {
+    color: rgb(253, 125, 145);
+}
+i.transitionMetals {
+    color: rgb(245, 214, 1);
+}
+i.postTransitionMetals {
+    color: rgb(184, 191, 120);
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru-UA">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Sotula Nick">
+	<meta name="description" content="Step Dnipro HomeWork Web Course">
+	<title>DZ31</title>
+	<style>
+		body {
+			padding: 15px 20px;
+			font-family: sans-serif;
+		}
+		pre {
+			display:block;
+			position: relative;
+			left:-80%;
+		}
+		section {
+			margin: 15px;
+			border-left: 15px solid #d5deed;
+			padding-left: 25px;
+		}
+
+		code {
+			font-size: 150%;
+			font-weight: 600;
+			color: rgb(26, 56, 112);
+		}
+		
+		main {
+			width: 600px;
+			margin: 0 auto;
+		}
+		
+		h1{
+			animation: jingle 5s ease infinite alternate;
+		}
+		
+	</style>
+</head>
+<body>
+	<main>
+		<h1>Домашнее задание №31</h1>
+		<section>
+			<h3>1</h3>
+			<p>Что делает тег <code>picture</code> и как его использовать в тандеме с тегами <code>source img</code>?</p>
+			<h3>Ответ:</h3>
+			<p>
+				HTML-элемент <code>picture</code> служит контейнером для одного или более элементов <code>source</code> и одного элемента <code>img</code> для обеспечения оптимальной версии изображения для различных размеров экрана. Браузер рассмотрит каждый из дочерних элементов  <code>source</code> и выберет один, соответствующий лучшему совпадению; если совпадений среди элементов <code>source</code> найдено не будет, то будет выбран файл, указанный  атрибутом  src элемента <code>img</code> . Затем выбранное изображение отображается в пространстве, занятом элементом <code>img</code>.
+			</p> 
+			<h3>Пример:</h3>
+			<pre>
+				<code>
+					&lt;picture&gt;
+						&lt;source srcset="mdn-logo-wide.png" media="(min-width: 600px)"&gt;
+						&lt;img src="mdn-logo-narrow.png" alt="MDN"&gt;
+					&lt;/picture&gt;
+				</code>
+			</pre>		
+		</section>
+		<section>
+			<h3>2</h3>
+			<p>С какими аттрибутами и тегами использовать тег <code>optgroup</code>?</p>
+			<h3>Ответ:</h3>
+			<p>
+				HTML-элемент <code>optgroup</code> позволяет группировать опции, находящиеся внутри элемента <code>select</code>.
+			</p>
+			<h3>Пример:</h3>
+			<pre>
+				<code>
+					&lt;select&gt;
+						&lt;optgroup label="Группа 1"&gt;
+						  &lt;option&gt;Опция 1.1&lt;/option&gt;
+						&lt;/optgroup&gt; 
+						&lt;optgroup label="Группа 2"&gt;
+						  &lt;option&gt;Опция 2.1&lt;/option&gt;
+						  &lt;option&gt;Опция 2.2&lt;/option&gt;
+						&lt;/optgroup&gt;
+						&lt;optgroup label="Группа 3" disabled&gt;
+						  &lt;option&gt;Опция 3.1&lt;/option&gt;
+						  &lt;option&gt;Опция 3.2&lt;/option&gt;
+						  &lt;option&gt;Опция 3.3&lt;/option&gt;
+						&lt;/optgroup&gt;
+					  &lt;/select&gt;
+				</code>
+			</pre>
+		</section>
+		<section>
+			<h3>3</h3>
+			<p>Опишите особенности использования тега <code>video</code>?</p>
+			<h3>Ответ:</h3>
+			<p>
+				Для встраивания видео контента в документ используйте элемент HTML <code>video</code>. Видео элемент может содержать один или несколько источников видео. Чтобы указать источник видео, необходимо использовать атрибут src или элемент <code>source</code>; браузер сам определит наиболее подходящий источник.
+			</p>
+			<h3>Пример:</h3>
+			<pre>
+				<code>
+					&lt;video width="480" controls poster="https://archive.org/download/WebmVp8Vorbis/webmvp8.gif" &gt;
+						&lt;source src="https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4" type="video/mp4"&gt;
+						&lt;source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv" type="video/ogg"&gt;
+						&lt;source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm" type="video/webm"&gt;
+						Your browser doesn't support HTML5 video tag.
+					&lt;/video&gt;
+				</code>
+			</pre>
+		</section>
+		<section>
+			<h3>4</h3>
+			<p>Что можно сделать с помощью тега <code>audio</code>?</p>
+			<h3>Ответ:</h3>
+			<p>
+				HTML-элемент <code>audio</code> используется для встраивания звукового контента в документ. Он может содержать один или более источников аудио, представленных с помощью атрибута src или элемента <code>source</code> – браузер выберет один наиболее подходящий. Он так же может предназначаться для потокового мультимедиа, используя интерфейс MediaStream.
+			</p>
+			<h3>Пример:</h3>
+			<pre>
+				<code>
+					&lt;figure&gt;
+						&lt;figcaption&gt;Listen to the T-Rex:&lt;/figcaption&gt;
+						&lt;audio
+							controls
+							src="/media/examples/t-rex-roar.mp3"&gt;
+								Your browser does not support the
+								&lt;code&gt;audio&lt;/code&gt; element.
+						&lt;/audio&gt;
+					&lt;/figure&gt;
+				</code>
+			</pre>
+			<p>
+				Приведенный выше пример показывает простое использование элемента <code>audio</code>. По аналогии с элементом <code>img</code> мы добавляем путь к мультимедиа, которое мы хотим встроить, в атрибут src. Мы можем добавить другие атрибуты, чтобы указать сведения, такие как автовоспроизведение и повтор, хотим ли мы отображать стандартные элементы управления звуком браузера
+			</p>
+		</section>
+		<section>
+			<h3>5</h3>
+			<p>Какие возможности открывает использование тега <code>iframe/frame</code>?</p>
+			<h3>Ответ:</h3>
+			<p>
+				<code>frame</code>. Фреймы разделяют окно браузера на отдельные области, расположенные рядом друг с другом. В каждую из таких областей загружается самостоятельная веб-страница.
+			</p>
+			<p>
+				iFrame или плавающий фрейм — отдельное окно, HTML-документ, который отображается вместе с другим содержимым страницы в окне браузера. Располагаться он может в любом месте, без привязки к тегу <code>iframe</code>.
+			</p>
+			<p>
+				Элемент <code>iframe</code> (от англ. inline frame — встроенный фрейм) создаёт встроенный фрейм, который находится внутри обычного документа, он позволяет загружать в область заданных размеров любые другие независимые документы.
+			</p>
+			<p>
+				Использование данного тега зачастую рискованно получением фильтра: сайт перестает полностью контролировать содержимое документа, так как его часть подгружается с другого сайта через iframe.
+			</p>
+			<p>
+				Поскольку мы перестаем контролировать содержимое, то через iframe возможна подгрузка нежелательного контента (18+, вирусы и прочее), что, в свою очередь, может привести к санкциям. А это отразится на продвижении в выдаче.
+			</p>
+			<h3>Пример:</h3>
+			<pre>
+				<code>
+					&lt;iframe src="news.html"&gt;
+						&lt;p&gt;Извините, но ваш браузер не может отобразить содержимое фрейма, но
+						  вы можете сами перейти на &lt;a href="news.html"&gt;страницу с новостями&lt;/a&gt;.
+						&lt;/p&gt;
+					&lt;/iframe&gt;
+				</code>
+			</pre>
+		</section>
+		<h3>Формат работы</h3>
+		<ul>
+			<li>html файл</li>
+		</ul>
+	</main>
+</body>
+</html>

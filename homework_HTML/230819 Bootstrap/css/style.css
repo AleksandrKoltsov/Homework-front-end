@@ -1,0 +1,147 @@
+.sm-icon{
+    background: url('../img/av_64.png') no-repeat;
+    background-size: 100%;
+    width: 64px;
+    height: 64px;
+    
+}
+.fas{
+    font-size: 2rem;
+    color: white;
+}
+nav{
+    background-color: rgb(16, 64, 117);
+}
+.waves-circle{
+    width: 64px;
+    height: 64px;
+}
+.font-size-big{
+    font-size: 2rem;
+    color: black;
+}
+.font-size-norm{
+    font-size: 1.2em;
+}
+.font-size-mid{
+    font-size: 1.5rem;
+}
+.hr-dark{
+    opacity: 0.2;
+}
+.font-size-small{
+    font-size: 0.7rem;
+}
+.font-op{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.350);
+}
+.reward{
+    background: url('../img/badge.png') no-repeat 60% 50%;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.arrow-right {
+    height: 2rem;
+    width: auto;
+    display: block;
+    color: black;
+    border-radius: 0em; /* Обнулить округлости */
+    background: white;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+    
+    margin: 0 auto; /* Это просто для выравнивания кнопки посередине */
+  }
+  .arrow-right:after, .arrow-right:before {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+  }
+  .arrow-right:after {
+      border-color: rgba(136, 183, 213, 0);
+      border-left-color: white;
+      border-width: 0.98rem;
+      margin-top: -0.97rem;
+      
+  }
+  .arrow-right:before {
+     
+      border-left-color: rgba(0, 0, 0, 0.2);
+      border-width: 1.05rem;
+      margin-top: -1.05rem;
+  }
+
+  .arrow-left {
+    height: 2rem;
+    width: auto;
+    display: block;
+    color: black;
+    border-radius: 0em; /* Обнулить округлости */
+    background: white;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+    
+    margin: 0 auto; /* Это просто для выравнивания кнопки посередине */
+  }
+  .arrow-left:after, .arrow-left:before {
+      right: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+  }
+  .arrow-left:after {
+      border-color: rgba(136, 183, 213, 0);
+      border-right-color: white;
+      border-width: 0.98rem;
+      margin-top: -0.97rem;
+      
+  }
+  .arrow-left:before {
+     
+      border-right-color: rgba(0, 0, 0, 0.2);
+      border-width: 1.05rem;
+      margin-top: -1.05rem;
+  }
+  .height1{
+      height: 1.2rem;
+  }
+
+  .width1{
+      width: 5.5rem;
+  }
+  .circle1{
+     border: 0 solid rgba(0, 0, 0, 0.5);
+     border-radius: 50%;
+  }
+.bg-success{
+    background-color: rgb(111,208,132) !important;
+}
+.bg-info{
+    background-color: rgb(55,176,193) !important;
+}
+.bg-danger{
+    background-color: rgb(249,134,145) !important;
+}
+.text-color1{
+    color:rgb(54,77,132);
+}
+.bg-avatar{
+    background: url('../img/av_256.png') 0% 0% no-repeat;
+    background-size: 100%;
+    width: 70px;
+    height: 200px;
+    
+}
+

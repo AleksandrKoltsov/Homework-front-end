@@ -1,0 +1,61 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14pt;
+    background-color: rgb(255, 255, 255);
+}
+a {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+}
+.anchor {
+    padding-top: 0.5em;
+    width: 100vw;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+.grid-conteiner{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 50px 100vh;
+    grid-template-areas: 
+    "menu-left header menu-right"
+    "menu-left center menu-right";
+  
+}
+.header{
+    grid-area: header;
+    background-color: plum;
+}
+.menu-left{
+    grid-area: menu-left;
+    background-color: rgb(173, 230, 197);
+}
+.menu-right{
+    grid-area: menu-right;
+    background-color: lightblue;
+}
+.left-content{
+    grid-area: left-content;
+    background-color: rgb(177, 173, 230);
+}
+.right-content{
+    grid-area: right-content;
+    background-color: rgb(230, 173, 173);
+}
+.center{
+    display: grid;
+    grid-area: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+    grid-template-areas: 
+    "left-content right-content";
+}
+.text-posit{
+    text-align: center;
+    padding-top: 2%;
+    font-size: 1.3em;
+    font-weight: 500;
+}

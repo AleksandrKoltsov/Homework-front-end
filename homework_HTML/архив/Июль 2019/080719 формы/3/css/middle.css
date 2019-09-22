@@ -1,0 +1,28 @@
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    .grid-conteiner{
+        grid-template-columns: min-content 1fr 1fr;
+        grid-template-rows: repeat(13, 55px);
+        grid-column-gap: 1em;
+        width: 80vw;
+        height: 750px;
+        grid-template-areas: 
+        "reg-form    reg-form   reg-form   "
+        "pic-user    username   username   "
+        "pic-email   email      email      "
+        "pic-pwd     pwd        confirm-pwd"
+        "   .        .           .         "
+        "pers-det    pers-det   pers-det   "
+        "first-name  first-name last-name  "
+        "gender      gender     date       "
+        "   .        .           .         "
+        "check-news  news       news       "
+        "check-cond  cond       cond       "
+        "  lin       lin         lin       "
+        "   .        .         submit      ";
+    }
+    .submit{
+        align-self: top;
+        justify-self: right;
+    }
+
+}
